@@ -9,7 +9,7 @@
             Out-GridView `
               -Title "Select an Azure Subscription ..." `
               -PassThru
-        ).SubscriptionId
+        ).Id
 
     Select-AzureRmSubscription `
         -SubscriptionId $subscriptionId
